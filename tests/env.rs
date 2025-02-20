@@ -19,7 +19,7 @@ pub struct DatabaseConfig {
 #[test]
 fn environment() {
     let config = Config::builder()
-        .add_source(File::new("env.yaml", FileFormat::Yaml))
+        .add_source(File::new("application.yaml", FileFormat::Yaml))
         .build().unwrap();
 
     let app_config: AppConfig = config.try_deserialize().unwrap();

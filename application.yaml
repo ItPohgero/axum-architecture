@@ -3,6 +3,6 @@ port: 8080
 database:
   host: localhost
   port: 5432
-  name: my_database
-  username: user
+  name: rust
+  username: asani
   password: password
