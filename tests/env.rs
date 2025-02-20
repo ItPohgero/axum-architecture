@@ -10,7 +10,7 @@ pub struct AppConfig {
 #[derive(Debug, Deserialize)]
 pub struct DatabaseConfig {
     host: String,
-    port: i32,
+    port: u16,
     name: String,
     username: String,
     password: String,
@@ -27,7 +27,7 @@ fn environment() {
     assert_eq!(app_config.name, "My Application");
     assert_eq!(app_config.database.host, "localhost");
     assert_eq!(app_config.database.port, 5432);
-    assert_eq!(app_config.database.name, "my_database");
-    assert_eq!(app_config.database.username, "user");
-    assert_eq!(app_config.database.password, "password");
+    assert_eq!(app_config.database.name, "rust");
+    assert_eq!(app_config.database.username, "asani");
+    assert_eq!(app_config.database.password, "root");
 }

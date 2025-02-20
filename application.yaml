@@ -5,4 +5,4 @@ database:
   port: 5432
   name: rust
   username: asani
-  password: password
+  password: root
