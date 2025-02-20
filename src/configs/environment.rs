@@ -4,14 +4,14 @@ use serde::Deserialize;
 #[derive(Debug, Deserialize)]
 pub struct AppConfig {
     pub name: String,
-    pub port: u32,
+    pub port: u16,
     pub database: DatabaseConfig,
 }
 
 #[derive(Debug, Deserialize)]
 pub struct DatabaseConfig {
     pub host: String,
-    pub port: u32,
+    pub port: u16,
     pub name: String,
     pub username: String,
     pub password: String,
